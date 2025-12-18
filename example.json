@@ -1,0 +1,29 @@
+{
+  "name": "Example JSON File",
+  "description": "This is a tested file to demonstrate multi-file support",
+  "uuid": "41bc7ed2-c584-4e64-a8c0-50bb543eb650",
+  "data": {
+    "items": [
+      {
+        "id": 2,
+        "name": "Item One",
+        "uuid": "abcdef00-1111-2222-3333-444444444444"
+      },
+      {
+        "id": 3,
+        "name": "Item Three",
+        "uuid": "5063d85c-cad4-4a9b-b1cc-da1ff6ecc19d"
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "author": "Test User"
+    }
+  },
+  "Digital_Signature": {
+    "name": "WKandek",
+    "email": "wolfgang@kandek.com",
+    "date": "2025-12-14T15:41:21.045005",
+    "uuid": "c66def88-2896-4edb-a740-37b6684912a7"
+  }
+}
