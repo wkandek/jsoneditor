@@ -1,0 +1,31 @@
+1. Please write a program in python that reads in the example.json file and provides a web based editor for the data. I need to be able to edit all fields, search and replace terms globally and in a sub hierarchy. The program should have unlimited undo functions.  It should save versions of the file after each edit. Presentation of the file should be in a structured hierarchical format, that allows for the opening of subjects by clicking on a field or a symbol before the field.
+
+2. Many fields inside the file are uuids - these track edits. When an edit occurs generate a UUID in the versioning system and associate it with the edit and replace the value in the file.
+I want to able to look through the versioning system and see uuids for each edit.
+
+3. I need a version view in the editor where i can search for edits and see when they happened, uuid before and after.
+
+4. I want to be able to click on the version and see it on the right hand side. I want to be able to return to the initial version as well.
+
+5. I need to be able to edit names of JSON structures as well, search and replace should be possible as well.
+
+6. I want to be able to work on a different JSON file, i.e. I need to be able to have load different files. Be sure to maintain versioning correctly for the different files. 
+- when i looked at example.json and edited it i noticed that we do not keep the original version around. Please fix that.
+
+7. I need users for the program. They have to login to use it. Please use Google login. limited to domain "kandek.com". Any authenticated use from these domains can use the program.
+Track the user name in the edits. Show other users that are logged in to help avoid conflicts.
+
+8. Add a digital signature function please. A button to sign, which will add a JSON element "Digital SIgnature" on the top level - name, date, uuid,
+
+9. In the JSON view make the hierarchies collapsible (was broken from step 1)
+- required 2 followups to work
+- codex = no
+10. Add a login bypass. If login.bypass active in.env file (active = default) then forgo login requirement and and use "WKandek" and "wkandek@searchstax.com" as logged in user
+- codex = no - seem less finicky...?
+
+11. I want to right click  an JSON object and be able to duplicate or delete it
+- required 2x follow up on errors
+
+12. if the name of the item is "id" I want to be able to increment or decrement its value via the right click menu
+
+13. add an upload and download function of json documents
